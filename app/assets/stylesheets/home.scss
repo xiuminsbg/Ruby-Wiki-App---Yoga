@@ -1,0 +1,96 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Oswald|Domine);
+html {
+  background: url(asset_path('home.jpg')) no-repeat center fixed;
+}
+header {
+font-family: 'Oswald', sans-serif;
+text-align: center;
+// background: pink;
+}
+body {
+  font-family: 'Domine', serif;
+  margin: -0.5em auto 0 auto;
+}
+h1 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-size: 5em;
+  color: rgb(245, 209, 59);
+  margin-left: 0.4em;
+}
+h3 {
+  font-size: 3em;
+  color: white;
+  text-shadow: 6px 6px 20px black;
+  text-align: center;
+}
+h6 {
+  font-size: 1.2em;
+  font-style: italic;
+  margin: auto;
+  text-align: center;
+  color: rgb(245, 209, 59);
+  // background: pink;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 8em auto 5em auto;
+  max-width: 70em;
+  line-height: 1.7em;
+  // background: pink;
+}
+img {
+  flex: 0 1 auto;
+  max-width: 35em;
+}
+article {
+  flex: 0 1 auto;
+  max-width: 34em;
+  background: none;
+  text-align: justify;
+  margin: 1em 0.5em 0 0.5em;
+}
+ul {
+  width: 100%;
+  margin: 0.5em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: none;
+  list-style: none;
+  background: none;
+}
+li {
+  flex: 0 1 auto;
+  margin: 2em;
+}
+.nav {
+  margin: 0.5em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+.nav > li {
+  margin: 1em 0.2em 0 0.2em;
+  background: none;
+  width: auto;
+  border-top: 2px solid rgb(43, 88, 131);
+  border-bottom: 2px solid rgb(43, 88, 131);
+  font-size: 1.3em;
+}
+a {
+  text-decoration: none;
+}

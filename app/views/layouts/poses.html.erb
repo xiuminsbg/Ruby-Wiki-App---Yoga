@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yoga</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav">
+        <li>
+          <%= link_to("HOME", {:controller => 'pages', :action => 'index'}) %>
+        </li>
+        <li>
+          <%= link_to("POSES", {:controller => 'poses', :action => 'poses'}) %>
+        </li>
+        <li>
+          <%= link_to("COMMENTS", {:controller => 'poses', :action => 'index'}) %>
+        </li>
+      </div>
+    </header>
+    <h1><%= @yoga_pose %></h1>
+    <h6><%= @original_name %></h6>
+    <%= yield %>
+  </body>
+</html>

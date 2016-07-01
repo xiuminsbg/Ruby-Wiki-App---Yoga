@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yoga</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'home', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav">
+        <li>
+          <%= link_to("HOME", {:controller => 'pages', :action => 'index'}) %>
+        </li>
+        <li>
+          <%= link_to("POSES", {:controller => 'poses', :action => 'poses'}) %>
+        </li>
+        <li>
+          <%= link_to("COMMENTS", {:controller => 'poses', :action => 'index'}) %>
+        </li>
+      </div>
+    </header>
+    <%= yield %>
+  </body>
+</html>
